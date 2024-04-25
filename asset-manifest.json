@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/YoxoWebsite/static/css/main.f0c8b25d.css",
-    "main.js": "/YoxoWebsite/static/js/main.a0c5dc2e.js",
+    "main.js": "/YoxoWebsite/static/js/main.27ad3c51.js",
     "static/js/453.a9533e77.chunk.js": "/YoxoWebsite/static/js/453.a9533e77.chunk.js",
     "static/media/terre_services_connecté_large.jpg": "/YoxoWebsite/static/media/terre_services_connecté_large.767ec15623b6929284e8.jpg",
     "static/media/yoxo_logo.png": "/YoxoWebsite/static/media/yoxo_logo.b1219c24f01247e578e4.png",
     "index.html": "/YoxoWebsite/index.html",
     "main.f0c8b25d.css.map": "/YoxoWebsite/static/css/main.f0c8b25d.css.map",
-    "main.a0c5dc2e.js.map": "/YoxoWebsite/static/js/main.a0c5dc2e.js.map",
+    "main.27ad3c51.js.map": "/YoxoWebsite/static/js/main.27ad3c51.js.map",
     "453.a9533e77.chunk.js.map": "/YoxoWebsite/static/js/453.a9533e77.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0c8b25d.css",
-    "static/js/main.a0c5dc2e.js"
+    "static/js/main.27ad3c51.js"
   ]
 }
