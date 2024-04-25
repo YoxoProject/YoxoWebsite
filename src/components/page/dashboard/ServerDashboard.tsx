@@ -46,8 +46,8 @@ function ServerDashboard() {
     const [stats, setStats] = useState<StatsData | null>(null);
 
     useEffect(() => {
-        const ws = new WebSocket(`ws://127.0.0.1:8888/server/${id}/ws`);
-        //const ws = new WebSocket(`ws://141.145.193.107:8080/server/${id}/ws`);
+        //const ws = new WebSocket(`ws://127.0.0.1:8888/server/${id}/ws`);
+        const ws = new WebSocket(`ws://141.145.193.107:8080/server/${id}/ws`);
 
         ws.onopen = () => {
             console.log('WebSocket is connected');
