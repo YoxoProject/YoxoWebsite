@@ -1,0 +1,30 @@
+/* style.module.css */
+
+.terminal {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    text-align: left;
+}
+
+.command_input {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.command_icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+}

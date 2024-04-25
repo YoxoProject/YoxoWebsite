@@ -1,0 +1,136 @@
+:root {
+    --main-bg-color: #f0f0f0;
+    --main-margin: 20px;
+    --button-color: #4CAF50;
+    --button-hover-color: #45a049;
+    --font-family: 'Arial', sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.main_dashboard {
+    display: flex;
+    margin-bottom: var(--main-margin);
+}
+
+.dashboard_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--main-margin);
+
+    width: 80%;
+}
+
+.dashboard_header {
+    justify-content: flex-start;
+}
+
+.dashboard_header h1 {
+    color: gray;
+    font-family: var(--font-family);
+    font-size: large;
+}
+
+.dashboard_header p {
+    color: gray;
+    font-family: var(--font-family);
+}
+
+.dashboard_center .console {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    margin-top: var(--main-margin);
+    padding: var(--main-margin);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+.right_side {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--main-margin);
+    padding: var(--main-margin);
+
+    width: 20%;
+}
+
+.action_button {
+    display: flex;
+    margin-bottom: var(--main-margin);
+}
+
+.action_button button {
+    width: 100px;
+    height: 40px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    margin-right: var(--main-margin);
+    transition: background-color 0.3s;
+}
+
+.action_button button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.server_details .detail {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--main-bg-color);
+    margin-top: var(--main-margin);
+    padding: var(--main-margin);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.server_details .detail:hover {
+    background-color: #c0c0c0;
+}
+
+.server_details .detail .data {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.server_details .detail .data p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.server_details .detail .data p:first-child {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.server_details div:hover {
+    background-color: #c0c0c0;
+}
+
+.graphs {
+    display: flex;
+    margin-top: var(--main-margin);
+    justify-content: center;
+}
+
+.graphs div {
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-bg-color);
+    margin-left: var(--main-margin);
+    padding: var(--main-margin);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}

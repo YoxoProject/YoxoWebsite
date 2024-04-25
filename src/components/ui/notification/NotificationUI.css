@@ -1,0 +1,71 @@
+.notification {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e1e1e1;
+    padding: 10px;
+    border-radius: 5px;
+    width: 20%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid red;
+}
+
+.message {
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.errorTitle {
+    display: flex;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+
+    margin: -5px 0 0 0;
+}
+
+.errorMessage {
+    font-size: 14px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.progressBarContainer {
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    border-radius: 5px;
+}
+
+.progressBar {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: progress 3s linear;
+    animation-fill-mode: forwards;
+
+    border-radius: 5px;
+}
+
+@keyframes progress {
+    from { width: 100%; }
+    to { width: 0; }
+}
