@@ -47,7 +47,7 @@ function ServerDashboard() {
 
     useEffect(() => {
         //const ws = new WebSocket(`ws://127.0.0.1:8888/server/${id}/ws`);
-        const ws = new WebSocket(`ws://api.yoxo.software/server/${id}/ws`);
+        const ws = new WebSocket(`wss://api.yoxo.software/server/${id}/ws`);
 
         ws.onopen = () => {
             console.log('WebSocket is connected');
