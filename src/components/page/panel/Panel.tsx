@@ -20,7 +20,7 @@ function ServersList() {
     }, []);
 
     const selectServer = (serverId: number) => {
-        window.location.href = `/panel/${serverId}`;
+        window.location.href = `/YoxoWebsite/#/panel/${serverId}`;
     }
 
     /*return (

@@ -5,7 +5,7 @@ import './App.css';
 import {AlertCircle, LogOut} from "lucide-react"
 
 import Main from "./components/page/Main";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import Login from "./components/page/login/Login";
 import {UserRound} from "lucide-react";
 import Panel from "./components/page/panel/Panel";
@@ -19,7 +19,7 @@ function App() {
     const [isLogged, setIsLogged] = React.useState(false);
 
     const logo_click = () => {
-        window.location.href = "/";
+        window.location.href = "/YoxoWebsite/";
         console.log("Logo clicked !");
     }
 
@@ -32,7 +32,7 @@ function App() {
         localStorage.removeItem('username');
         Request.logout().then(r => {
             setIsLogged(false)
-            window.location.href = "/";
+            window.location.href = "/YoxoWebsite/";
         });
     }
 
@@ -60,20 +60,21 @@ function App() {
                 <img src={logo} alt="Logo" id="logo" onClick={logo_click}/>
                 <h1 onClick={logo_click}>Yoxo</h1>
                 <menu>
-                    <li className="menu_child" onClick={() => redirect("/panel")}>Panel</li>
+                    <li className="menu_child" onClick={() => redirect("/YoxoWebsite/#/panel")}>Panel</li>
 
                     {(isLogged ?
                             <LogOut className="menu_child user_icon" onClick={logout} /*size={30}*//>
                             :
                             <UserRound className="menu_child" id="user_icon" size={30}
-                                       onClick={() => redirect("/login")}/>
+                                       onClick={() => redirect("/YoxoWebsite/#/login")}/>
                     )}
                 </menu>
             </header>
 
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Main/>}/>
+                    <Route path="/YoxoWebsite/" element={<Main/>}/>
                     <Route path="/login" element={<Login isLogged={isLogged}/>}/>
                     {(
                         isLogged ?
@@ -86,7 +87,7 @@ function App() {
                     )}
                     <Route path="/panel/:id" element={<ServerDashboard />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
 
             <footer>
                 <p>© 2024 Yoxo. Tous droits réservés.</p>

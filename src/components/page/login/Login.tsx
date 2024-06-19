@@ -23,7 +23,7 @@ function Login({isLogged}: {isLogged: boolean}) {
             console.log("Login success !")
             localStorage.setItem('token', data.token);
             localStorage.setItem('username', username);
-            window.location.href = "/panel";
+            window.location.href = "/YoxoWebsite/#/panel";
         } else {
             showNotification(data.reason);
             console.log("Login failed !")
@@ -33,7 +33,7 @@ function Login({isLogged}: {isLogged: boolean}) {
 
     React.useEffect(() => {
         if (isLogged) {
-            window.location.href = "/panel";
+            window.location.href = "/YoxoWebsite/#/panel";
         }
     })
 
